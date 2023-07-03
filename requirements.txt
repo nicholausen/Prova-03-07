@@ -1,0 +1,9 @@
+streamlit 
+requests
+json
+pandas 
+numpy 
+matplotlib.pyplot 
+fastapi 
+pydantic
+jobliuvicorn

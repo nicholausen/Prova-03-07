@@ -9,7 +9,7 @@ def main():
     administration = st.number_input("Inserisci Administration")
     marketing = st.number_input("Inserisci Marketing")
 
-    ############## GET REQUEST #################
+
     if st.button("Predict with GET"):
         url = url_API
         url2 = f"?R&D Spend={rd_spend}&Administration={administration}&Marketing={marketing}"
@@ -19,7 +19,7 @@ def main():
         result =response.json()
         st.success(f"The result is: {result['prediction']}")
 
-    ############## POST REQUEST #################
+ 
     if st.button("Predict with POST"):
         url = url_API
         response =requests.post(url,
